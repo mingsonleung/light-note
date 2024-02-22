@@ -9,7 +9,7 @@ export default function Home() {
           <div>
             <span className="w-auto px-6 py-3 rounded-full bg-secondary">
               <span className="text-small font-medium text-primary">
-                Lightweight Note App
+                Lightweight Notes App
               </span>
             </span>
 
