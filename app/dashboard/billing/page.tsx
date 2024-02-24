@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -15,14 +14,11 @@ import {
   StripePortal,
   StripeSubscriptionButton,
 } from "@/app/components/Submitbuttons";
-import { unstable_noStore as noStore } from "next/cache";}
+import { unstable_noStore as noStore } from "next/cache";
 
 const featureItems = [
-  { name: "Featured Item 1" },
-  { name: "Featured Item 2" },
-  { name: "Featured Item 3" },
-  { name: "Featured Item 4" },
-  { name: "Featured Item 5" },
+  { name: "Unlimited notes" },
+  { name: "Real-time support" },
 ];
 
 async function getData(userId: string) {
