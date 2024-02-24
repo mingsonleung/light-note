@@ -15,14 +15,6 @@ Lightnote is a modern, full-featured application designed to streamline note-tak
 - 🪝 **Stripe Webhooks Implementation**: Leverage Stripe webhooks for real-time notifications on subscription events.
 - 😶‍🌫️ **Deployment**: Ready for deployment to Vercel, ensuring a smooth, scalable production environment.
 
-## Underlying Functionality
-
-- Cache revalidation for optimized performance.
-- Implementation of the Stripe Customer Portal for easy subscription management.
-- Creation of a Stripe Checkout page for seamless payment experiences.
-- Server-side functionality enhancements.
-- Full CRUD operations for notes: Add, View, Edit, and Delete Notes.
-
 ## Resources Used
 
 - [Next.js](https://nextjs.org)
