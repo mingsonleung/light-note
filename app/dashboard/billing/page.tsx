@@ -15,6 +15,7 @@ import {
   StripePortal,
   StripeSubscriptionButton,
 } from "@/app/components/Submitbuttons";
+import { unstable_noStore as noStore } from "next/cache";}
 
 const featureItems = [
   { name: "Featured Item 1" },
@@ -25,6 +26,7 @@ const featureItems = [
 ];
 
 async function getData(userId: string) {
+  noStore();
   const data = await prisma.subscription.findUnique({
     where: {
       userId: userId,
