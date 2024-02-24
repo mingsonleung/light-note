@@ -73,7 +73,7 @@ export default async function DashboardPage() {
           </div>
           <h2 className="mt-6 text-xl font-semibold">No Notes</h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You don't have any notes. Get started by pressing New Note below.
+            You do not have any notes. Get started by pressing New Note below.
           </p>
 
           {data?.Subscription?.status === "active" ? (
