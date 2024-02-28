@@ -93,7 +93,7 @@ export default async function BillingPage() {
           <div className="grid gap-1">
             <h1 className="text-3xl md:text-4xl">Subscription</h1>
             <p className="text-lg text-muted-foreground">
-              Subscription Settings
+              Manage your subscription and billing information.
             </p>
           </div>
         </div>
