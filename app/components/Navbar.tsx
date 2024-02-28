@@ -21,9 +21,9 @@ export async function Navbar() {
           </h1>
         </Link>
 
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-2 md:gap-x-5">
           <ThemeToggle />
-          
+
           {(await isAuthenticated()) ? (
             <UserNav
               name={`${user?.given_name} ${user?.family_name}` as string}
@@ -31,7 +31,7 @@ export async function Navbar() {
               image={user?.picture as string}
             />
           ) : (
-            <div className="flex items-center gap-x-5">
+            <div className="flex items-center gap-x-2 md:gap-x-5">
               <LoginLink>
                 <Button>Log In</Button>
               </LoginLink>
