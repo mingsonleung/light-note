@@ -92,6 +92,7 @@ export default async function DynamicRoute({
               placeholder="Description"
               required
               defaultValue={data?.description}
+              className="resize-y h-40 md:h-60"
             />
           </div>
         </CardContent>
