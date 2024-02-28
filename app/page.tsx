@@ -25,8 +25,8 @@ export default async function Home() {
               Create Notes with Ease
             </h1>
             <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A minimalist design that lets you focus on your thoughts, not on
+              figuring out how to use the app.
             </p>
           </div>
           <div className="flex justify-center max-w-sm mx-auto mt-10">
