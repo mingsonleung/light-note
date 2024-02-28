@@ -15,6 +15,11 @@ import {
   StripeSubscriptionButton,
 } from "@/app/components/Submitbuttons";
 import { unstable_noStore as noStore } from "next/cache";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Billing",
+};
 
 const featureItems = [
   { name: "Unlimited notes" },

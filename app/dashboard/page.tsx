@@ -6,6 +6,11 @@ import { Edit, File, Trash } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { revalidatePath, unstable_noStore as noStore } from "next/cache";
 import { TrashDelete } from "../components/Submitbuttons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 async function getData(userId: string) {
   noStore();

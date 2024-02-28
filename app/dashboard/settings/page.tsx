@@ -21,6 +21,11 @@ import prisma from "@/app/lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { SubmitButton } from "@/app/components/Submitbuttons";
 import { revalidatePath, unstable_noStore as noStore } from "next/cache";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Settings",
+};
 
 async function getData(userId: string) {
   noStore();
@@ -65,7 +70,9 @@ export default async function SettingsPage() {
       <div className="flex items-center justify-between px-2">
         <div className="grid gap-1">
           <h1 className="text-3xl md:text-4xl">Settings</h1>
-          <p className="text-lg text-muted-foreground">Update account and preferences.</p>
+          <p className="text-lg text-muted-foreground">
+            Update account and preferences.
+          </p>
         </div>
       </div>
 
