@@ -20,7 +20,6 @@ export default async function Home() {
                 Lightweight Notes App
               </span>
             </span>
-
             <h1 className="mt-8 text-3xl font-extrabold tracking-tight lg:text-6xl">
               Create Notes with Ease
             </h1>
