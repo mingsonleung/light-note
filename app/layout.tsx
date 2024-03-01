@@ -44,10 +44,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${data?.colorScheme ?? "theme-blue"}`}>
+        className={`${inter.className} ${data?.colorScheme ?? "theme-yellow"}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark" /* prev: "system" */
           enableSystem
           disableTransitionOnChange>
           <Navbar />
