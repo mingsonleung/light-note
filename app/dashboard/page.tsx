@@ -60,7 +60,8 @@ export default async function DashboardPage() {
           </p>
         </div>
 
-        {data?.Subscription?.status === "active" ? (
+        {data?.Subscription?.status === "active" ||
+        (data?.Note?.length ?? 0) < 3 ? (
           <Button asChild>
             <Link href="/dashboard/new">New Note</Link>
           </Button>
@@ -81,7 +82,8 @@ export default async function DashboardPage() {
             You do not have any notes. Get started by pressing New Note below.
           </p>
 
-          {data?.Subscription?.status === "active" ? (
+          {data?.Subscription?.status === "active" ||
+          (data?.Note?.length ?? 0) < 3 ? (
             <Button asChild>
               <Link href="/dashboard/new">New Note</Link>
             </Button>
