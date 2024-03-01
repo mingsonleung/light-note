@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
 import prisma from "@/app/lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { getStripeSession, stripe } from "@/app/lib/stripe";
@@ -20,6 +20,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Billing",
 };
+
+const basicItems = [{ name: "Limited notes" }];
 
 const featureItems = [
   { name: "Unlimited notes" },
@@ -134,11 +136,19 @@ export default async function BillingPage() {
             $20 <span className="ml-1 text-2xl text-muted-foreground">/mo</span>
           </div>
           <p className="mt-5 text-lg text-muted-foreground">
-            Unlimited notes per month
+            Access to Lightnote Premium
           </p>
         </CardContent>
         <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-secondary rounded-lg m-1 space-y-6 sm:p-10 sm:pt-6">
           <ul className="space-y-4">
+            {basicItems.map((item, index) => (
+              <li key={index} className="flex items-center">
+                <div className="flex-shrink-0">
+                  <XCircle className="h-6 w-6 text-red-500" />
+                </div>
+                <p className="ml-3 text-base">{item.name}</p>
+              </li>
+            ))}
             {featureItems.map((item, index) => (
               <li key={index} className="flex items-center">
                 <div className="flex-shrink-0">
